@@ -6,6 +6,9 @@ import "bootstrap-webpack";
 
 import User from './components/user.jsx';
 
-import {orderBy} from "./lib/orderBy.js";
+//import {orderBy, byFirstName} from "./lib/orderBy.js";
 
-render(<User data={orderBy(require("json!./data/users.json"))}/>, document.querySelector('#content'));
+//const data = orderBy(require("json!./data/users.json"));
+//const data = orderBy(require("json!./data/users.json"), byFirstName);
+
+render(<User/>, document.querySelector('#content'));

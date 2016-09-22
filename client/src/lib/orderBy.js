@@ -1,8 +1,14 @@
-const orderBy = (list, by) => by === undefined ? orderBy(list, byLastName) : list.sort((a,b) => {return by(a,b)});
+// Some examples to sort the user's data .
 
-const byLastName = (a,b) => (a.last_name > b.last_name) ? 1 : ((b.last_name > a.last_name) ? -1 : 0);
+// By default the byLastName is used to order the user's list.
+//const orderBy = (list, by) => by === undefined ? orderBy(list, byLastName) : list.sort((a,b) => {return by(a,b)});
+const orderBy = (list, by = byLastName) => list.sort((a,b) => {return by(a,b)});
 
-const byFirstName = (a,b) => (a.first_name > b.first_name) ? 1 : ((b.first_name > a.first_name) ? -1 : 0);
+const byLastName = (a,b) => byField(a, b ,'last_name');
 
+const byFirstName = (a,b) => byField(a, b ,'first_name');
 
+const byField = (a,b, field) => (a[field] > b[field]) ? 1 : ((b[field] > a[field]) ? -1 : 0);
+
+// As example, the byField is a private method. It's not possible to use byField in React's components
 export {orderBy, byLastName, byFirstName};

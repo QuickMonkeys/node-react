@@ -17,7 +17,11 @@ const Search = (props) =>
                 <span>
                     Total: {props.filtered.length} of {props.users.length} {props.checked.length == 0 ? '' : ` - selected: ${props.checked.length} (they will not be filtered). `}
                 </span>
-                <a href="javascript:void(0)" onClick={() => props.handleClick({type:'CLEAR'})} style={{display: props.checked.length != 0 ? 'inline' :'none'}}>Clear all selected</a>
+                <span style={{display: props.checked.length != 0 ? 'inline' :'none'}}>
+                <a href="javascript:void(0)" onClick={() => props.handleClick({type:'CLEAR'})} >Clear all selected</a>
+                &nbsp;|&nbsp;
+                <a href="javascript:void(0)" onClick={() => props.handleClick({type:'SELECTED'})} >Show only selected</a>
+                </span>
             </div>
             <hr />
         </div>
