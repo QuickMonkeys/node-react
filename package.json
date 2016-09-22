@@ -1,10 +1,10 @@
 {
   "name": "React",
   "version": "1.0.0",
-  "description": "",
+  "description": "An example of react with node.js",
   "main": "server.js",
   "repository": "",
-  "author": "Carlos",
+  "author": "Carlos Eduardo",
   "dependencies": {
     "async": "~0.2.8",
     "bootstrap": "^3.3.7",
