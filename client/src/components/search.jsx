@@ -20,7 +20,7 @@ const Search = (props) =>
                 <span style={{display: props.checked.length != 0 ? 'inline' :'none'}}>
                 <a href="javascript:void(0)" onClick={() => props.handleClick({type:'CLEAR'})} >Clear all selected</a>
                 &nbsp;|&nbsp;
-                <a href="javascript:void(0)" onClick={() => props.handleClick({type:'SELECTED'})} >Show only selected</a>
+                <a href="javascript:void(0)" onClick={() => props.handleClick({type:'SELECTED'})} >Show selected users</a>
                 </span>
             </div>
             <hr />
