@@ -1,0 +1,41 @@
+{
+  "name": "React",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "repository": "",
+  "author": "Carlos",
+  "dependencies": {
+    "async": "~0.2.8",
+    "bootstrap": "^3.3.7",
+    "bootstrap-webpack": "0.0.5",
+    "exports-loader": "^0.6.3",
+    "express": "~3.2.4",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "foreman": "^2.0.0",
+    "imports-loader": "^0.6.5",
+    "jquery": "^3.1.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "socket.io": "~0.9.14",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "devbuild": "webpack --progress --color"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.25.0",
+    "json-loader": "^0.5.4",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "style-loader": "^0.13.1"
+  }
+}

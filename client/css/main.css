@@ -1,0 +1,56 @@
+.card {
+    border: 1px solid #FFF;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 6px;
+    color: #FFF;
+}
+
+.card hr {
+    margin: 8px 0;
+}
+
+.card:hover {
+    -webkit-box-shadow: 7px 7px 22px 0px rgba(128,124,128,1);
+    -moz-box-shadow: 7px 7px 22px 0px rgba(128,124,128,1);
+    box-shadow: 7px 7px 22px 0px rgba(128,124,128,1);
+    cursor: pointer;
+}
+
+.male {
+    background-color: #536ADF;
+}
+
+.female {
+    background-color: #AB26CC;
+}
+
+.photo {
+    padding-right: 6px;
+    display: inline;
+}
+
+.photo img {
+    border-radius: 10px;
+    border: 2px solid #FFF;
+}
+
+.check {
+    width: 42px;
+    float:right;
+}
+
+.name {
+    display: inline;
+    font-size: 16px;
+}
+
+.email {
+    display: inline-block;
+}
+
+.nothing {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 18px;
+}
