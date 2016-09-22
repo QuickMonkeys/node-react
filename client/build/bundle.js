@@ -34477,15 +34477,15 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _cards = __webpack_require__(272);
+	var _cards = __webpack_require__(268);
 	
 	var _cards2 = _interopRequireDefault(_cards);
 	
-	var _search = __webpack_require__(269);
+	var _search = __webpack_require__(270);
 	
 	var _search2 = _interopRequireDefault(_search);
 	
-	var _orderBy = __webpack_require__(270);
+	var _orderBy = __webpack_require__(271);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -34534,7 +34534,7 @@
 	            console.log('User - componentDidMount');
 	
 	            // An ajax can be used here to access the data, by a rest API service
-	            var data = (0, _orderBy.orderBy)(__webpack_require__(271));
+	            var data = (0, _orderBy.orderBy)(__webpack_require__(272));
 	            //const data = orderBy(require("json!./data/users.json"), byFirstName);
 	
 	            this.setState({ users: data, filtered: data });
@@ -34653,6 +34653,54 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _card = __webpack_require__(269);
+	
+	var _card2 = _interopRequireDefault(_card);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	// In this example, we are using the es6 object destructuring.
+	// The react stateless component always receive the props parameter, but we can destructure to expose the properties.
+	
+	var Cards = function Cards(_ref) {
+	    var handleClick = _ref.handleClick;
+	    var filtered = _ref.filtered;
+	    var checked = _ref.checked;
+	
+	
+	    var nothing = function nothing() {
+	        return _react2.default.createElement(
+	            'div',
+	            { className: 'nothing' },
+	            'Well... Nothing to show here based on your search.'
+	        );
+	    };
+	
+	    return _react2.default.createElement(
+	        'div',
+	        { className: 'row' },
+	        filtered.length != 0 ? filtered.map(function (u) {
+	            return _react2.default.createElement(_card2.default, { user: u, handleClick: handleClick, checked: checked });
+	        }) : nothing()
+	    );
+	};
+	
+	exports.default = Cards;
+
+/***/ },
+/* 269 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _react = __webpack_require__(70);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// In this example, we are using the es6 object destructuring.
@@ -34712,7 +34760,7 @@
 	exports.default = Card;
 
 /***/ },
-/* 269 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34773,7 +34821,7 @@
 	                    { href: 'javascript:void(0)', onClick: function onClick() {
 	                            return props.handleClick({ type: 'SELECTED' });
 	                        } },
-	                    'Show only selected'
+	                    'Show selected users'
 	                )
 	            )
 	        ),
@@ -34784,7 +34832,7 @@
 	exports.default = Search;
 
 /***/ },
-/* 270 */
+/* 271 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -34821,7 +34869,7 @@
 	exports.byFirstName = byFirstName;
 
 /***/ },
-/* 271 */
+/* 272 */
 /***/ function(module, exports) {
 
 	module.exports = [
@@ -35226,54 +35274,6 @@
 			"photo": "https://randomuser.me/api/portraits/thumb/men/50.jpg"
 		}
 	];
-
-/***/ },
-/* 272 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _react = __webpack_require__(70);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _card = __webpack_require__(268);
-	
-	var _card2 = _interopRequireDefault(_card);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	// In this example, we are using the es6 object destructuring.
-	// The react stateless component always receive the props parameter, but we can destructure to expose the properties.
-	
-	var Cards = function Cards(_ref) {
-	    var handleClick = _ref.handleClick;
-	    var filtered = _ref.filtered;
-	    var checked = _ref.checked;
-	
-	
-	    var nothing = function nothing() {
-	        return _react2.default.createElement(
-	            'div',
-	            { className: 'nothing' },
-	            'Well... Nothing to show here based on your search.'
-	        );
-	    };
-	
-	    return _react2.default.createElement(
-	        'div',
-	        { className: 'row' },
-	        filtered.length != 0 ? filtered.map(function (u) {
-	            return _react2.default.createElement(_card2.default, { user: u, handleClick: handleClick, checked: checked });
-	        }) : nothing()
-	    );
-	};
-	
-	exports.default = Cards;
 
 /***/ }
 /******/ ]);
