@@ -24,7 +24,8 @@
   },
   "scripts": {
     "start": "node server.js",
-    "devbuild": "webpack --progress --color"
+    "devbuild": "webpack --progress --color",
+    "probuild": "webpack --optimize-minimize --optimize-occurrence-order  --optimize-dedupe --progress --color"
   },
   "devDependencies": {
     "babel": "^6.5.2",
