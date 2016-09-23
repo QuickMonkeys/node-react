@@ -8,7 +8,7 @@ var config = {
 
   devtool: 'source-map',
   entry: mainPath,
-  output: { path: buildPath, filename: 'bundle.js' },
+  output: { path: buildPath, filename: 'bundle.js', publicPath: '/client/build' },
   module: {
     loaders: [
       { test: [/\.js$/, /\.jsx$/], loader: 'babel-loader', exclude: [nodeModulesPath] },

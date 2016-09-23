@@ -4,14 +4,14 @@ This example has the intent to show the functionality of react.js.
 
 
 
-The data is representing by a json (the focus is not the database access... yet!)
+The data is representing by a json file (the focus is not the database access... yet!) to be used by the component.
 
-The transpiler used is Babel.
+The transpiler used to generate javascript is Babel.
 
-Webpack is used to create the javascript bundle of the project.
+Webpack is used to create the javascript bundle of the project (see webpack.config.js and webpack.config.prod.js).
 
-Foreman is used to start the services of Webpack, that's responsible for 
-watch changes and recompile code and node to run the web server 
+Foreman is used to start two services: Webpack, that's responsible for 
+watch changes and recompile code and node to run the web server (see server.js).
 (it's possible to configure react hot loader to improve productivity).
 
 To use:

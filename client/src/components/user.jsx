@@ -99,7 +99,7 @@ export default class User extends React.Component {
     }
 
     // the ...this.state ( ... = spread operator) is responsible to pass all states as properties for each child
-    // (for more information, check the react's one-way data flow)
+    // React uses the immutable concept to handle data between the components (for more information, check the react's one-way data flow).
 
     render() {
         return(
