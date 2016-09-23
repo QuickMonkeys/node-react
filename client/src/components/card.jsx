@@ -17,7 +17,7 @@ const Card = ({handleClick, user, checked}) => {
     
     const getCardClass = u => u.gender == 'M' ? 'card male' : 'card female';
     
-    return <div className="col-md-4" key={user.id} onClick={() => handleClick({type:'PICKED', id:user.id})}>
+    return <div className="col-md-4" onClick={() => handleClick({type:'PICKED', id:user.id})}>
                 <div className={getCardClass(user)}>
                     <div className="photo"> 
                         <img src={user.photo} />

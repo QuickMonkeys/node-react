@@ -12,7 +12,7 @@ const Cards = ({handleClick, filtered, checked}) => {
     return  <div className="row">
                 { 
                     filtered.length != 0 
-                        ? filtered.map( u => <Card user={u} handleClick={handleClick} checked={checked} /> ) 
+                        ? filtered.map( u => <Card key={u.id}  user={u} handleClick={handleClick} checked={checked} /> ) 
                         : nothing()
                 }
             </div>;
