@@ -25,14 +25,15 @@
     "less-loader": "^2.2.3",
     "socket.io": "~0.9.14",
     "url-loader": "^0.5.7",
-    "webpack": "^1.13.2"
-  },
-  "devDependencies": {
+    "webpack": "^1.13.2",
     "css-loader": "^0.25.0",
     "json-loader": "^0.5.4",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
-    "style-loader": "^0.13.1"
+    "style-loader": "^0.13.1"    
+  },
+  "devDependencies": {
+
   },  
   "scripts": {
     "start": "node server.js",
