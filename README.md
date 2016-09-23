@@ -23,3 +23,8 @@ cd ...
 run npm i to install node_modules
 
 run nf start to start the application
+
+Heroku
+
+NODE_ENV: production
+NPM_CONFIG_PRODUCTION: true
