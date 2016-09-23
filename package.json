@@ -26,7 +26,7 @@
     "start": "node server.js",
     "devbuild": "webpack --progress --color",
     "probuild": "webpack --optimize-minimize --optimize-occurrence-order  --optimize-dedupe --progress --color",
-    "postinstall": "webpack --config ./webpack.config.prod.js --progress --colors"
+    "postinstall": "webpack --config ./webpack.config.prod.js --progress --colors --display-error-details"
   },
   "devDependencies": {
     "babel": "^6.5.2",
