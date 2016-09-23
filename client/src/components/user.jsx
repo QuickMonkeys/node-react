@@ -3,6 +3,8 @@ import React from 'react';
 import Cards from './cards.jsx';
 import Search from './search.jsx';
 
+// Just another example of destructuring in a import. The byLastName function cannot be accesed in user.jsx
+// In this case does not matter, because it's used as default order in orderBy method (See lib/orderBy.js)
 import {orderBy, byFirstName} from "../lib/orderBy.js";
 
 export default class User extends React.Component {
@@ -35,6 +37,7 @@ export default class User extends React.Component {
 
         // An ajax can be used here to access the data, by a rest API service
         const data = orderBy(require("json!../data/users.json"));
+        // Example of injecting another order by
         //const data = orderBy(require("json!./data/users.json"), byFirstName);
         
         this.setState({users: data, filtered: data});
@@ -60,7 +63,7 @@ export default class User extends React.Component {
     // Just a function that checks if the text exists in the names
     
     hasString(name, text) {
-        return name.toUpperCase().indexOf(text.toUpperCase()) >=0 ;
+        return name.toUpperCase().indexOf(text.toUpperCase()) >=0;
     }
     
     //
