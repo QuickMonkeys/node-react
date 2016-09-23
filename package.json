@@ -24,15 +24,15 @@
     "babel-preset-react": "^6.11.1",
     "bootstrap": "^3.3.7",
     "bootstrap-webpack": "0.0.5",
+    "css-loader": "^0.25.0",
     "exports-loader": "^0.6.3",
     "file-loader": "^0.9.0",
     "imports-loader": "^0.6.5",
+    "json-loader": "^0.5.4",
     "less-loader": "^2.2.3",
+    "style-loader": "^0.13.1"
     "url-loader": "^0.5.7",
     "webpack": "^1.13.2",
-    "css-loader": "^0.25.0",
-    "json-loader": "^0.5.4",
-    "style-loader": "^0.13.1"
   },
   "scripts": {
     "start": "node server.js",
