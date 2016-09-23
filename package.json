@@ -35,7 +35,6 @@
   "scripts": {
     "start": "node server.js",
     "devbuild": "webpack --progress --color",
-    "probuild": "webpack --optimize-minimize --optimize-occurrence-order  --optimize-dedupe --progress --color",
-    "postinstall": "webpack --config ./webpack.config.prod.js --progress --colors --display-error-details"
+    "probuild": "webpack --optimize-minimize --optimize-occurrence-order  --optimize-dedupe --progress --color"
   }
 }
