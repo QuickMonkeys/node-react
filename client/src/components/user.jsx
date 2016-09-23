@@ -11,9 +11,8 @@ export default class User extends React.Component {
 
     constructor() {
         super();
-        // In the constructor we can initiate the state of the component.
-        // In lifecycle the children will receive at first time, these information.
-        // The "magic" happens in the componentDidMount callback function.
+        // The initial state is configured in the component constructor.
+        // Once the component is rendered, the componentDidMount callback function is executed.
         this.state = {users: [], filtered: [], checked: [], filterText: ''};
         
         // We need to inform to the function what "this" will be used in the context of the function call.
