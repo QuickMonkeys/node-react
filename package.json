@@ -32,7 +32,7 @@
     "less-loader": "^2.2.3",
     "style-loader": "^0.13.1"
     "url-loader": "^0.5.7",
-    "webpack": "^1.13.2",
+    "webpack": "^1.13.2"
   },
   "scripts": {
     "start": "node server.js",
