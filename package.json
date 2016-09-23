@@ -22,12 +22,6 @@
     "url-loader": "^0.5.7",
     "webpack": "^1.13.2"
   },
-  "scripts": {
-    "start": "node server.js",
-    "devbuild": "webpack --progress --color",
-    "probuild": "webpack --optimize-minimize --optimize-occurrence-order  --optimize-dedupe --progress --color",
-    "postinstall": "webpack --config ./webpack.config.prod.js --progress --colors --display-error-details"
-  },
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.14.0",
@@ -39,5 +33,11 @@
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "style-loader": "^0.13.1"
+  },  
+  "scripts": {
+    "start": "node server.js",
+    "devbuild": "webpack --progress --color",
+    "probuild": "webpack --optimize-minimize --optimize-occurrence-order  --optimize-dedupe --progress --color",
+    "postinstall": "webpack --config ./webpack.config.prod.js --progress --colors --display-error-details"
   }
 }
