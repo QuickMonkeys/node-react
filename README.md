@@ -16,10 +16,10 @@ To get the code:
 
 git clone https://github.com/QuickMonkeys/node-react.git
 
-cd node-react
+`cd node-react`
 
 run `npm i` to install node_modules
 
 run `nf start` to start the application using Foreman.
 
-You can see a [Demo](https://node-react-quick.herokuapp.com/) here.
+You can see a live [Demo](https://node-react-quick.herokuapp.com/) here.
