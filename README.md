@@ -23,4 +23,4 @@ run `npm i` to install node_modules
 
 run `nf start` to start the application using Foreman.
 
-You can see a [Demo](https://node-react-quick.herokuapp.com/). here 
+You can see a [Demo](https://node-react-quick.herokuapp.com/) here.
