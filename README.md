@@ -8,9 +8,9 @@ The transpiler used to generate javascript is Babel.
 
 Webpack is used to create the javascript bundle of the project (see webpack.config.js and webpack.config.prod.js).
 
-Foreman is used to start two services: Webpack, that's responsible for 
-watch changes and recompile code and node to run the web server (see server.js).
-(it's possible to configure react hot loader to improve productivity).
+Foreman is used to start two services: 
+    * Webpack, that's responsible for watch changes and recompile code 
+    * node to run the web server (see server.js).
 
 To get the code:
 
