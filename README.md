@@ -11,7 +11,7 @@ Webpack is used to create the javascript bundle of the project (see webpack.conf
 Foreman is used to start two services: 
 ```
     - Webpack, that's responsible for watch changes and recompile code 
-    - node to run the web server (see server.js).
+    - Node, that's responsible to run the web server (see config file server.js).
 ```
 
 To get the code:
