@@ -1,7 +1,7 @@
 import React from 'react';
 
 // The react stateless component always receive the props parameter, 
-// that contains all properties and functions passed by parent object that contains all properties and functions that are passed by the parent object
+// that contains all properties and functions that are passed by the parent object.
 // the Clear all link uses a ternary operator to show / hide based on at least one selection
 // the same happens with the selected info.
 

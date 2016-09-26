@@ -17,7 +17,7 @@ export default class User extends React.Component {
         
         // We need to inform to the function what "this" will be used in the context of the function call.
         this.handleClick = this.handleClick.bind(this);
-        // It's possible to bind the function in the moment of you usage (take a look in the render() method, <Search> child).
+        // It's possible to bind the function in the moment of usage (take a look in the render() method, <Search> child).
         // in es6, we can use the arrow functions to call the function. In this case a bind is not necessary;
         
     }
