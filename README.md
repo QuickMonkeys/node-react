@@ -1,6 +1,6 @@
-#node-react
+# node-react
 
-##This example has the intent to show the functionality of react.js.
+## This example has the intent to show the functionality of react.js.
 
 
 The data is representing by a json file (the focus is not the database access... yet!) to be used by the component.
